@@ -68,6 +68,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </nav>
         <!-- Masthead-->
         <header class="masthead">
+            <body> <!-- Messenger Plugin de discussion Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de discussion code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "112019628179141");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+            </body>
             <div class="container">
                 <div class="masthead-subheading"> <br> <br></div>
                 <div class="masthead-heading text"> <br> <br> <br> </div>
@@ -108,36 +139,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="text-center">
   <h2 class="section-heading text-uppercase"> Notre plus-value <br> <br> </h2>
   <body>
-       <!-- Messenger Plugin de discussion Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin de discussion code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "112019628179141");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
     <video width="70%" height="auto" controls>
       <source src="video/CommercialeWinsights.mp4" type=video/mp4>
     </video>
